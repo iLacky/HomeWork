@@ -6,7 +6,7 @@ print(text)
 age = 23                       
 month_of_year = 12
 remaining_months = 5
-age_in_month = age * month_of_year +remaining_months
+age_in_month = age * month_of_year + remaining_months
 print(age_in_month)
 
 age_in_years = age
