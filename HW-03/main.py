@@ -9,7 +9,7 @@ remaining_months = 5
 age_in_month = age * month_of_year + remaining_months
 print(age_in_month)
 
-age_in_years = age
+age_in_years = age_in_month // 12
 print(age_in_years)
 
 age_in_years = str(age)
@@ -18,11 +18,11 @@ my_age = 'My name is ' + name +' I`m ' + age_in_years + ' years old.'
 print(my_age)
 
 number = 1
-print (number>2)
-print (number<5)
-print (number==3)
-print (number!=4)
-print (number<=6)
+print(number>2)
+print(number<5)
+print(number==3)
+print(number!=4)
+print(number<=6)
 
 
 a = 2
