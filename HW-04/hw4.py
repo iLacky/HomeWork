@@ -3,8 +3,7 @@ if text.isdigit():
     text = int(text)
     print(str(text)+' it`s numeric.')
     print(type(text))
-text % 2 == 0
-    if is_even(text):
+    if text % 2 == 0:
         print(str(text) + ' it`s even.')
     else:
         print(str(text) + ' it`s add.')
