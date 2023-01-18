@@ -3,9 +3,8 @@ def MyDec(func):
 
     def wrap(*args, **kwargs):
         time = datetime.now()
-        func(*args, **kwargs)
-
         print(f'Open function: {func} \n Time: {time}')
+        func(12, 'test', {'key': '1'})
     return wrap
 
 @MyDec
