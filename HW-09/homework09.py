@@ -10,9 +10,7 @@ def my_gen(num):
         fibonacci1 = fibonacci2
         fibonacci2 = add_fibonacci
         item = item + 1
-        result = f'Element value {fibonacci2}'
-    yield result
+        result = (f'Element value {fibonacci2}')
+        yield result
 
-for value in my_gen(num):
-    print(value)
-
+print(list(my_gen(num))[-1])
