@@ -2,12 +2,12 @@ from datetime import datetime
 
 
 def MyDecFunc(func):
-    def wrap(**kwargs):
+    def wrap(*args, **kwargs):
         time = datetime.now()
         text = f'Open function {func} \n Time: {time}'
-        with open('file_dec', 'x') as file_dec:
+        with open('file_dec', 'w+') as file_dec:
             file_dec.write(text)
-        func(**kwargs)
+        func(*args, **kwargs)
         return func
     return wrap
 
