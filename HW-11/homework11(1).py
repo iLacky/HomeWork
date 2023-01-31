@@ -7,8 +7,7 @@ def MyDecFunc(func):
         text = f'Open function {func} \n Time: {time}'
         with open('file_dec', 'w+') as file_dec:
             file_dec.write(text)
-        func(*args, **kwargs)
-        return func
+        return func(*args, **kwargs)
     return wrap
 
 
