@@ -31,15 +31,14 @@ while True:
             print(f'This contact already exist.')
         else:
             number = input('Enter number: ')
-            num = int(number)
             for item in number:
-                if re.findall(r'\+380\d{9}\b|380\d{9}\b|0\d{9}\b', number):
-                    file_dict[key] = num
+                if re.findall(r'^\+380\d{9}\b|^380\d{9}\b|^0\d{9}\b', number):
+                    file_dict[key] = number
                     with open('file', 'w+') as file:
                         file_dict = json.dumps(file_dict)
                         file.write(file_dict)
                         file_dict = json.loads(file_dict)
-                    print(f'Add new contact: {key} {num}')
+                    print(f'Add new contact: {key} {number}')
                 else:
                     print('Invalid phone number')
                 break
