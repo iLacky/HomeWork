@@ -20,10 +20,10 @@ class TelegramBot(Bot):
 
     def set_url(self, url):
         self.url = url
-        print(url)
+
     def set_chat_id(self, chat_id):
         self.chat_id = chat_id
-        return chat_id
+        
     def send_message(self, message):
         print(f'{self.name} bot says {message} to chat {self.chat_id} using {self.url}')
 
